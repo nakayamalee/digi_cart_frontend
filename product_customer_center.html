@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>會員中心</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-gH2yIJqKdNHPEq0n4Mqa/HGKIhSkIHeL5AyhkYV8i59U5AR6csBvApHHNl/vI1Bx" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.9.1/font/bootstrap-icons.css">
+    <link rel="stylesheet" href="./css/all.css">
+    <link rel="stylesheet" href="./css/customer.css">
+</head>
+
+<body>
+    <header>
+        <nav class="navbar navbar-expand-lg w-100">
+            <div class="container-fluid">
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                    aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse justify-content-between" id="navbarNav">
+                    <ul class="navbar-nav">
+                        <li class="nav-item">
+                            <a class="nav-link active text-white text-center" aria-current="page"
+                                href="/hompage.html">首頁</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link text-white text-center" href="/product_index.html">商品列表</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link text-white text-center" href="/product_customer_center.html">會員中心</a>
+                        </li>
+                    </ul>
+                    <ul class="navbar-nav">
+                        <li class="nav-item">
+                            <a class="nav-link text-white text-center" href="/product_cart.html">
+                                <i class="bi bi-cart4 position-relative">
+                                    <div class="position-absolute border rounded-circle cart-product-count">0</div>
+                                </i>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </header>
+    <main>
+        <div class="conatiner-fulid px-0 pt-0 px-sm-5 pt-sm-5">
+            <h1>帳號資料</h1>
+            <div class="row g-3 m-0 justify-content-evenly">
+                <div class="card mb-3 col-12 p-5">
+                    <div class="text-center d-flex justify-content-center align-items-center mb-3">
+                        <label for="nickName" class="fs-1 me-3">暱稱:</label>
+                        <input type="text" name="nickName" id="nickName">
+                    </div>
+                    <div class="d-flex justify-content-center">
+                        <button type="button" class="btn card-btn fs-3 px-3 py-1 text-white me-5">修改</button>
+                        <button type="button" class="btn card-btn fs-3 px-3 py-1 text-white bg-secondary">登出</button>
+                    </div>
+                </div>
+            </div>
+            <h1>過去訂單</h1>
+            <div class="row g-3 m-0 justify-content-evenly">
+                <div class="card mb-3 col-12 p-0 p-sm-5">
+                    <table class="table table-striped">
+                        <thead>
+                            <tr>
+                                <th scope="col">#</th>
+                                <th scope="col">訂單成立時間</th>
+                                <th scope="col">訂單編號</th>
+                                <th scope="col">訂單金額</th>
+                                <th scope="col">訂單狀態</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <th scope="row">1</th>
+                                <td>2022/07/19</td>
+                                <td>HES123456789</td>
+                                <td>NT$600</td>
+                                <td class="text-primary">配送中</td>
+                            </tr>
+                            <tr>
+                                <th scope="row">2</th>
+                                <td>2022/07/19</td>
+                                <td>HES123456789</td>
+                                <td>NT$600</td>
+                                <td class="fw-bolder text-secondary">未付款</td>
+                            </tr>
+                            <tr>
+                                <th scope="row">3</th>
+                                <td>2022/07/19</td>
+                                <td>HES123456789</td>
+                                <td>NT$600</td>
+                                <td class="fw-bolder text-danger">已取消</td>
+                            </tr>
+                            <tr>
+                                <th scope="row">4</th>
+                                <td>2022/07/19</td>
+                                <td>HES123456789</td>
+                                <td>NT$600</td>
+                                <td class="text-success">已送達</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-A3rJD856KowSb7dwlZdYEkO39Gagi7vIsF0jrRAoQmDKKtQBHUuLZ9AsSv4jD4Xa"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>

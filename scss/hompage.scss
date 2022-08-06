@@ -1,0 +1,12 @@
+main{
+    padding-top: 56px;
+    height: 100vh;
+    background-image: url('../img/ocean.jpg');
+    background-size: cover;
+    background-position: center;
+    h1{
+        top: 250px;
+        left: 50%;
+        transform: translateX(-50%);
+    }
+}
