@@ -52,4 +52,9 @@ header nav .nav-link .cart-product-count {
   z-index: 1;
   background-color: #fff;
   color: rgba(226, 22, 21, 0.85);
+}
+
+main {
+  padding-top: 56px;
+  height: 100vh;
 }/*# sourceMappingURL=all.css.map */
