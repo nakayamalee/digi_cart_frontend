@@ -1,0 +1,41 @@
+main{
+    table{
+        tbody{
+            th{
+                vertical-align: middle;
+            }
+            td{
+                img{
+                    width: 100%;
+                    min-width: 100px;
+                    max-width: 150px;
+                    height: 100%;
+                    max-height: 200px;
+                    object-fit: contain;
+                    object-position: center;
+                }
+                vertical-align: middle;
+            }
+        }
+    }
+
+    #delivery-info{
+        .delivery{
+            width: 20px;
+        }
+        input[type="radio"]:checked + label{  
+            &>div{
+                border-color: rgba(226, 22, 21, .85)!important;
+            }    
+            .delivery{
+                background-color: rgba(226, 22, 21, .85);
+            }
+        }
+    }
+
+    #pay-way{
+        input:checked + label{
+            border-color: rgba(226, 22, 21, .85)!important;
+        }
+    }
+}
