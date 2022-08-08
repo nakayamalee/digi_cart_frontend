@@ -31,11 +31,26 @@ main{
                 background-color: rgba(226, 22, 21, .85);
             }
         }
+        .info{
+            position: relative;
+            &::after{
+                content: '';
+                width: 100%;
+                height: 1px;
+                position: absolute;
+                bottom: 0px;
+                left: 0px;
+                background-color: rgba(128,128,128,.5);
+            }
+        }
     }
 
     #pay-way{
         input:checked + label{
             border-color: rgba(226, 22, 21, .85)!important;
         }
+    }
+    .bi-check-circle{
+        font-size: 144px;
     }
 }
